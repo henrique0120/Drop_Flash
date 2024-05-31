@@ -1,0 +1,148 @@
+\documentclass[a4paper,12pt]{uninove-ppgi} %courier ou times
+\begin{document}
+\lstset{
+    language=xml,
+    tabsize=3,
+    frame=shadowbox,
+    rulesepcolor=\color{gray},
+    xleftmargin=20pt,
+    framexleftmargin=15pt,
+    keywordstyle=\color{blue}\bf,
+    commentstyle=\color{OliveGreen},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    breaklines=true,
+    showstringspaces=false,
+    basicstyle=\footnotesize,
+    emph={food,name,price},emphstyle={\color{magenta}}
+}
+
+% Posiciona o logo da Uni9 no topo
+\includegraphics[height=1.5cm]{uninove-logo}
+
+% parametros de capa e folha de rosto (é necessário configurar todos)
+\Universidade{UNIVERSIDADE NOVE DE JULHO - UNINOVE}
+
+\Autor{EXCLUÍDOS OS DADOS SOBRE OS AUTORES EM ATENDIMENTO A LGPD - LEI GERAL DE PROTEÇÃO DE DADOS}
+
+% ATENÇÃO: NÃO INCLUIR NOME E RA DE NENHUM ALUNO
+% EM NENHUMA PARTE DO DOCUMENTO
+
+\Titulo{DROP FLASH}
+
+% Inserir o nome do projeto no formato que está abaixo (Olhe o nome da disciplina na central do aluno)
+\Tipoprojeto{PROJETO EM GESTÃO DE SISTEMAS COMPUTACIONAIS}
+
+% Informe qual o curso: Bacharel ou Tecnólogo + curso
+\Curso{Ciência da Computação}
+
+% NÃO ALTERAR
+\Orientador{Edson Melo de Souza, Dr.}
+
+% Inserir o ano correspondente
+\Ano{2024}
+
+% gera a capa automaticamente
+\capa
+
+% gera folha de rosto automaticamente
+\folharosto
+
+% ##################### Início dos elementos pré-textuais ############################
+
+% Resumo (Obrigatório)
+\input{pre_textuais/01_resumo}
+
+% Abstract (Obrigatório) - resumo em inglês
+\input{pre_textuais/02_abstract}
+
+% Sumário (Obrigatório)
+\begingroup
+\makeatletter \let\ps@plain\ps@empty \makeatother
+\tableofcontents % sumário
+\endgroup
+\thispagestyle{empty}
+
+% Lista de figuras
+\renewcommand*\listfigurename{Lista de Ilustrações}
+\listoffigures
+\thispagestyle{empty}
+
+% ############### Fim dos elementos pré-textuais ######################
+
+\regularchapterstyle
+
+% ############### Início dos Capítulos (Obrigatório ) #################
+%Introdução
+%Base Teórica
+%Descrição drones
+%Descrição - motos e Bikes
+%Descrição rotas
+%Financeiro drones e Motos
+%Marketing drones e Motos
+%Legislação
+%Funcionando do site 
+%Marketing das motos
+%Descrição Robo
+%Financeiro/ orçamento
+%Apresentação PDF/ Marketing
+%Propostas contrato
+%Regulamentação
+%Conclusão
+
+% Introdução
+\input{capitulos/cap01_introducao}
+
+% Base Teórica
+\input{capitulos/cap02_fundamentacao_teorica}
+
+% Modelos de drones utilizados
+\input{capitulos/cap03_modelodrone}
+
+% Motos e bikes
+\input{capitulos/cap04_motos}
+
+% Rotas dos drones
+\input{capitulos/cap05_rotasdosdrones}
+
+% Fianceiro moto e drone
+\input{capitulos/cap06_financeiromotoedrone}
+
+% Marketing drone e moto
+\input{capitulos/cap07_marketingempresa}
+
+% Legislação
+\input{capitulos/cap08_legislacao}
+
+% Funcionamento da plataforma drop flash
+\input{capitulos/cap09_funcionamentodaplataforma}
+
+%  Marketing das motos
+\input{capitulos/cap10_marketingempresa}
+
+% Robo
+\input{capitulos/cap11_robo}
+
+% Financeiro
+\input{capitulos/cap12_financeiroorcamento}
+
+% Marketing da empresa 
+\input{capitulos/cap13_marketing_robo}
+
+% Proposta de contrato
+\input{capitulos/cap14_propostacontrato}
+
+%Regulamentação 
+\input{capitulos/cap15_regulamentacao}
+
+% Conclusão
+\input{capitulos/cap16_conclusao}
+
+% ##################### Fim dos Capítulos ############################
+
+% Bibliografia 
+\bibliography{refs}
+
+\end{document}
